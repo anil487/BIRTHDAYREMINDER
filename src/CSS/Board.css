@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#site-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+}
+
+.board {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul > li {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+ul > li:hover {
+    transform: scale(1.02);
+}
+
+ul > li .flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul > li img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.title h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.title h5 {
+    font-size: 1em;
+    color: #777;
+}
+
+.futureBirthday {
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .board {
+        padding: 10px;
+    }
+
+    ul > li {
+        padding: 15px;
+    }
+
+    ul > li img {
+        width: 60px;
+        height: 60px;
+    }
+}
